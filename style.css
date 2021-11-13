@@ -1,0 +1,152 @@
+body{margin: 0; padding: 0; background: #0d6ab7; background-size: cover; font-family: arial;}
+    .hornilista{height: 50px;width: 100%; background:#f4f4f4; position: fixed;border-bottom: 1px solid #dadada;max-width: 940px;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;z-index:10;}
+.next {
+    width: 20px;
+    padding-left: 60px;
+}
+    .hornilista img{height: 70px; left:0; right: 0;position: absolute;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;}
+.hraje {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.hornifoto {
+    width: calc(100% + 40px);
+    height: 400px;
+    margin-left: -20px;
+}
+.hornitext {
+    position: absolute;
+    margin-top: 0px;
+    z-index: 5;
+    font-size: 30px;
+    width: calc(100% + 40px);
+    height: 400px;
+    max-width: 940px;
+    background: #0d6ab7a8;
+}
+.hornitexttext {
+    position: inherit;
+    padding: 20px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin-top: 300px;
+    text-align: center;
+}
+.hornitexttext:hover {
+    color: white;
+    background: #0d6ab7;
+}
+.hornifotoprekryv {
+    width: calc(100% + 40px);
+    height: 400px;
+    position: absolute;
+    z-index: 3;
+    max-width: 940px;
+}
+.hornitextdatum {
+    position: absolute;
+    background: #0d6ab7;
+    padding: 5px;
+    margin-top: 220px;
+    margin-left: auto;
+    color: white;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: max-content;
+}
+.pozadi-special {
+    background: url(/img/parallax.jpg);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+.historieimg{
+    width: 150px;
+    border-radius: 180px;
+    float: left;
+}
+.historietext {
+    margin-left: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    padding-top: 5px;
+}
+.pozadi{
+    overflow: hidden;
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -1;
+filter: blur(5px);
+}
+    .obsah{background: white; max-width: 900px; width: 100%; margin-left: auto; margin-right: auto; margin-bottom: 50px; padding-top: 50px; padding-left: 20px;padding-right:20px;padding-bottom:20px;}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.zapni{
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    height: 400px;
+    background: url(/img/mixpult.jpg);
+    background-size: auto;
+background-size: cover;
+background-position: center;
+}
+.zapni-text{
+    color:white; font-size: 24px; text-align: center; padding-top:20px;
+}
+.zapni img{height: 100px; margin-left: auto; margin-right: auto; position: absolute;left: 0;
+right: 0px;padding-top: 106px;}
+h2 {
+    font-size: 24px;
+}
+.zapnoutvysilani {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    z-index: 333;
+    bottom: 20;
+    right: 20;
+}
+.zapnoutvysilani:hover {
+    opacity: 0.5;
+}
+.zapnoutvysilani img {
+    width: 70px;
+    height: 70px;
+}
+a {color:#0d6ab7; text-decoration: underline;}
+a:hover{text-decoration: none;}
