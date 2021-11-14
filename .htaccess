@@ -1,0 +1,19 @@
+RewriteEngine on
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+
+RewriteCond %{HTTP_USER_AGENT} !(BlackBerry)
+
+RewriteCond %{HTTP_USER_AGENT} !(Windows\sNT\s5\.[12])
+
+RewriteCond %{HTTP_HOST} ^(www\.)?epigon.info
+
+# all redirection HTTP -> HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# redirection no www -> https://www.
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+ErrorDocument 404 /index.php
