@@ -7,16 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
-    <div class="hornilista"><div class="hraje"><?php
-$url = 'https://radia.cz/data/pravehraje/160.html';
-$content = file_get_contents($url);
-$interpret = explode( '<div class="nazev">' , $content );
-$second_step = explode("</div>" , $interpret[1]);
-$song = explode( '<div class="song">' , $content );
-$song_result = explode("</div>" , $song[1]);
-
-echo $second_step[0] ." - ". $song_result[0];
-?></div>
+    <div class="hornilista"><div class="hraje"></div>
     <a href="/"><img src="/img/e-logo.png" title="logo WebRádia Epigon"></a></div>
     <div class="obsah">
         <a href="#"><div class="hornifoto"><div class="hornitext"><!--<div class="hornitextdatum">29. 6. 2021<br>15:00</div>--><div class="hornitexttext">WebRádio Epigon</div></div><div class="pozadi-special"></div></div></a>
