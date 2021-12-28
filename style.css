@@ -68,7 +68,7 @@ margin-top: 10px;}
     width: max-content;
 }
 .vanoce {
-    background: url(/img/parallax.png);
+    background: url(/img/vanoce.png);
         background-repeat: repeat;
     width: 100%;
     height: 50px;
@@ -78,7 +78,7 @@ margin-top: 10px;}
     margin-top: 10px;
 }
 .pozadi-special {
-    background: url(/img/vanoceuvod.jpg);
+    background: url(/img/parallax.jpg);
         background-position-x: 0%;
         background-position-y: 0%;
         background-size: auto;
