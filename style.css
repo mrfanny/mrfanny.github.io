@@ -160,3 +160,13 @@ h2 {
 }
 a {color:#0d6ab7; text-decoration: underline;}
 a:hover{text-decoration: none;}
+.paticka {
+  position: relative;
+  padding: 30px;
+  background: #dadada;
+  width: calc(100% - 20px);
+  margin-top: 30px;
+  margin-left: -20px;
+  margin-bottom: 0;
+  bottom: 0;
+}
