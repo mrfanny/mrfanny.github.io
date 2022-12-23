@@ -1,32 +1,217 @@
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/img/e-logo.png">
-     <link rel="stylesheet" href="/style.css?v=2">
-    <title>WebRádio Epigon</title>
-    <meta name="viewport" content="width=device-width, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, viewport-fit=cover'>
+<meta name="robots" content="index, follow">
+     <meta name="description" content="Oficiální web studentského rádia Epigon, které vysílá už od roku 2011 z jihočeského Vimperka.">
+<link rel="stylesheet" href="style.css?v=3">
+<title>WebRádio Epigon - rádio nejen pro mladé</title>
+<link rel="shortcut icon" href="logo.svg">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<link href="lightboox/dist/css/lightbox.css" rel="stylesheet">
+<link rel="stylesheet" href="lightbox/dist/css/lightbox.min.css">
+<script src="lightbox/dist/js/lightbox.js"></script>
+<script src="lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+ <script>
+  $('#play-video').on('click', function(e) {
+    var $video = $('#video');
+    src = $video.attr('src');
+    $video.attr('src', src + '?autoplay=1');
+  });
+</script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+<script>
+function menu() {
+  var x = document.getElementById("menu");
+  if(x) {
+    x.classList.toggle('hamburger_on');
+  }
+}
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div class="hornilista"><div class="vanoce"></div><div class="hraje"></div>
-    <a href="/"><img src="/img/logo-vanoce.png" title="logo WebRádia Epigon"></a></div>
-    <div class="obsah">
-        <a href="#"><div class="hornifoto"><div class="hornitext"><!--<div class="hornitextdatum">29. 6. 2021<br>15:00</div>--><div class="hornitexttext">WebRádio Epigon</div></div><div class="pozadi-special"></div></div></a>
-        <p>Vítejte na webových stránkách studentského rádia Epigon. Naše rádio bylo založeno v červnu 2011, což znamená, že vám už 10 let hraje tu nejlepší muziku. Za celou dobu našeho vysílání se za mikrofonem vystřídalo spoustu moderátorů - někteří se objevili jen na krátkou chvíli, jiní zůstali i několik let.</p><p>A právě moderátoři, ve spojení s pekelně dobrou muzikou, jsou to, co dělalo a stále dělá naše vysílání tak skvělé. Jsme studentským rádiem a to znamená, že se narozdíl od rádiích komerčních, nemusíme omezovat na krátké vstupy, jejichž čas je pevně nastaven, aby se stihla odvysílat reklama. Nic takového v našem vysílání totiž nenajdete!</p><p>Proč? Naše vysílání neobsahuje žádné reklamy a vy si tak můžete nerušeně vychutnat to nejlepší z rockové muziky bez zbytečného přerušování.</p>
-        <a href="https://radia.cz/radio-webradio-epigon-info" target="_blank"><div class="zapni"><div class="hornitext"><img src="/img/zapni.png">
-        <div class="hornitexttext">Klikni a poslouchej >></div></div></div></a>
-        <h2>Napiš do studia</h2>
-        <p>Chceš nám nabídnout nějakou Tvou píseň, kterou bychom mohli zařadit do playlistu nebo nás kontaktovat přes e-mail? Napiš na adresu <a href="mailto:radio@stredni-skola.eu">radio@stredni-skola.eu</a>. Předem upozorňujeme, že zaslané písně prochází interním schválením a nemůžeme zaručit jejich zařazení do vysílání. Prosíme o zasílání pouze rockové, metalové, punkové, apod. hudby.</p>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdx0AnnzagiOpPz9I8HMgO8weTFkeb-1TprYTh5SgfSV9xj0w/viewform?embedded=true" height="720px" width="100%" style="" frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>
-<h2>Sleduj naší webku!</h2>
-<p>Pokud nevidíte obraz z webkamery, webkameru zrovna nevysíláme.</p>
-<div class="video-container"><iframe src="https://www.youtube.com/embed/live_stream?channel=UCyBs26DLAUSnoXzqDCkzhtA" allowfullscreen="" style="width: 100%;" frameborder="0"></iframe></div>
-<h2>Z historie</h2><div class="historie">
-<img src="/img/rafael.jpg" class="historieimg"><div class="historietext"><h2>2011</h2>WebRádio Epigon zahájilo své vysílání v červenci roku 2011 z budovy tehdejšího domova mládeže v Brantlově ulici.</div>
-<br><br><img src="/img/sipka.png" class="next"><br><br>
-<img src="/img/provizorni.jpg" class="historieimg">
-<div class="historietext"><h2>2015</h2>Stěhování do Nerudovy ulice, kde se zhruba měsíc vysílalo z provizorních prostor. Později došlo k přestěhování do samostatného studia.</div>
+<div class="play"><div class="play-background-prekryv"></div><div class="play-background"><img src="/img/vanoce.jpg"><!--mixpult.jpg--></div><div class="radioinfo"><b>WebRádio Epigon</b>│rádio nejen pro mladé</div><a href="https://radia.cz/radio-webradio-epigon-info" target="_blank"><div class="playbutton"></div></a></div>
+<div class="main-menu"><div class="logo"><a href="/"><img src="celelogo.svg" alt="WebRádio Epigon"></a></div><ul id="menu"><li><a href="#uvod" onclick="menu()">úvod</a></li><li><a href="#jukebox" onclick="menu()">jukebox</a></li><li><a href="https://radia.cz/radio-webradio-epigon-info" target="_blank" style="color: var(--epigonmodra);">poslouchej</a></li><li><a class="swipe" style="margin: unset;" href="/kontakty.html">kontakty</a></li></ul><div class="xbutton" onclick="menu()"><span class="material-symbols-outlined">
+menu
+</span></div></div>
+<a name="uvod" class="aname"></a><div class="basic-info1"><div class="basic1prekryv"></div><div class="basic-info-prekryv1"></div><div class="basic-info-1-gradient"></div><div class="celelogo"><img src="celelogo.svg"></div><div class="basic1">
+<h1>WebRádio <span style="color:var(--epigonmodra);">Epigon</span></h1>
+<p>WebRádio Epigon je studentským rádiem, které pro vás vysílá už od roku 2011 z jihočeského Vimperka. Provozovatelem vysílání je <a href="https://stredni-skola.eu" target="_blank">Střední škola a Základní škola Vimperk</a>, jejíž studenti zcela samostatně tvoří obsah vysílání. Značka Epigon je na vimpersku známá zejména díky dnes již neexistující regionální televizi, na jejímž vysílání se řada našich moderátorů podílela.
+</p><br>
+<p>
+Epigon si klade za cíl plnohodnotně uspokojit své posluchače výběrem skvělé muziky a předáváním zajímavých i nezajímavých informací. Aby bylo možné tohoto cíle dosáhnout, v minulosti byl do vysílání několikrát zařazen živý přenos koncertu, nespočet rozhovorů se zajímavými hosty a nárazově i čtyřiadvacetihodinový živý přenos ze studia. Vysílání Epigonu není přerušováno otravnými reklamami, takže vám nabízí mnohem více muziky než komerční rádia.
+</p><div class="buttonline"><a href="https://radia.cz/radio-webradio-epigon-info" target="_blank" class="modrybutton">poslouchat</a></div>
 </div>
-    <div class="paticka">© 2022 WebRádio Epigon | <a href="https://stredni-skola.eu">Nerudovka Vimperk</a></div></div>
-<div class="pozadi"><img src="/img/background.jpg"></div>
-<a href="https://radia.cz/radio-webradio-epigon-info" target="_blank"><div class="zapnoutvysilani"><img src="/img/zapni.png"></div></a>
+</div>
+<div class="basic-info"><a name="jukebox" class="aname"></a><div class="basic-info-prekryv"></div><div class="basic"><div class="jukeboxobsah">
+<form id="formular" class="jukeboxform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdx0AnnzagiOpPz9I8HMgO8weTFkeb-1TprYTh5SgfSV9xj0w/formResponse" method="post">
+<h1>JUKEBOX</h1>
+<br>
+<div class="jukeboxobsahgrid">
+<span class="jmeno">Jméno*:</span>
+<input type="text" class="jmenopole" name="entry.1581597246" required>
+<span class="zprava">Zpráva*:</span>
+<textarea class="zpravapole" rows="5" name="entry.389750406" required></textarea>
+<button target="_self" class="g-recaptcha" data-sitekey="6LcFUl8hAAAAAIPbtNwyImzhwuA48gu_lDF-ViY1" data-callback='onSubmit' data-action='submit' type="submit">odeslat</button>
+</div>
+<p style="font-size: 12px; letter-spacing: 1px; line-height: 12px; padding-bottom: 10px; color: black;width: 70%;margin-left: auto;margin-right: auto;" class="googlewarning">This site is protected by reCAPTCHA and the Google
+    <a style="color: var(--bila);" href="https://policies.google.com/privacy">Privacy Policy</a> and
+    <a style="color: var(--bila);" href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+ <script>
+   function onSubmit(token) {
+     document.getElementById("formular").submit();
+   }
+ </script>
+</form>
+</div></div><div class="basic-gradient"></div></div>
+
+<div class="text">
+<a name="team" class="aname"></a>
+<div class="team">
+<h1><span style="color: var(--epigonmodra);">Epigon</span> TEAM</h1>
+<p><a href="/nabor.html">Hledáme nové členy našeho týmu!</a></p>
+<div class="swipe"><- posouvejte prstem -></div>
+<div class="profily">
+<a href="/nabor.html"><div class="profil"><img src="logo.svg"><div class="jmenoprofil">Tady můžeš být Ty!<br><span class="funkce"></span></div></div></a>
+<!--<div class="profil"><img src="logo.svg"><div class="jmenoprofil">Epigoňák<br><span class="funkce">funkce</span></div></div>
+<div class="profil"><img src="logo.svg"><div class="jmenoprofil">Epigoňák<br><span class="funkce">funkce</span></div></div>
+<div class="profil"><img src="logo.svg"><div class="jmenoprofil">Epigoňák<br><span class="funkce">funkce</span></div></div>
+<div class="profil"><img src="logo.svg"><div class="jmenoprofil">Epigoňák<br><span class="funkce">funkce</span></div></div>
+<a href="/honza-brambora.html"><div class="profil"><img src="img/brambora-profil.jpg"><div class="jmenoprofil">Honza Brambora<br><span class="funkce">týmový jezdec</span></div></div></a>
+<a href="/moderator-fanta.html"><div class="profil"><img src="img/fanta.jpg"><div class="jmenoprofil">Fanta<br><span class="funkce">správce webu a PR</span></div></div></a>-->
+
+</div><a href="/rozcestnik-moderatori.html" class="odkazstred">všichni moderátoři</a>
+</div>
+<a name="program" class="aname"></a>
+<div class="program">
+<h1><span style="color: var(--epigonmodra);">Epigon</span> program</h1>
+<!--<div class="swipe"><- posouvejte prstem -></div>-->
+<p>WebRádio Epigon v současné době z personálních důvodů nevysílá moderované vstupy ze studia, veškerý obsah tvoří automaticky generovaný playlist. Do vyřešení tohoto problému zde nebude zobrazován program. <a href="/novinky-krize2022.html">Více informací o Epigoňácké krizi</a>.</p>
+<!-- <div class="program1">
+<div class="den den1">Pondělí</div>
+<div class="den den2">Úterý</div>
+<div class="den den3">Středa</div>
+<div class="den den4">Čtvrtek</div>
+<div class="den den5">Pátek</div>
+<div class="den den6">Sobota</div>
+<div class="den den7">Neděle</div>
+<div class="casy h0">00</div>
+<div class="casy h1">01</div>
+<div class="casy h2">02</div>
+<div class="casy h3">03</div>
+<div class="casy h4">04</div>
+<div class="casy h5">05</div>
+<div class="casy h6">06</div>
+<div class="casy h7">07</div>
+<div class="casy h8">08</div>
+<div class="casy h9">06</div>
+<div class="casy h10">10</div>
+<div class="casy h11">11</div>
+<div class="casy h12">12</div>
+<div class="casy h13">13</div>
+<div class="casy h14">14</div>
+<div class="casy h15">15</div>
+<div class="casy h16">16</div>
+<div class="casy h17">17</div>
+<div class="casy h18">18</div>
+<div class="casy h19">19</div>
+<div class="casy h20">20</div>
+<div class="casy h21">21</div>
+<div class="casy h22">22</div>
+<div class="casy h23">23</div>
+<div class="porad epigon-playlist1">Epigon playlist</div>
+<div class="porad epigon-playlist2">Epigon playlist</div>
+<div class="porad vecerni-epigon2"><a href="/porady-vecerni-epigon.html">Večerní Epigon</a></div>
+<div class="porad epigon-playlist3">Epigon playlist</div>
+<div class="porad epigon-playlist4">Epigon playlist</div>
+<div class="porad epigon-playlist5">Epigon playlist</div>
+<div class="porad epigon-playlist6">Epigon playlist</div>
+<div class="porad epigon-playlist7">Epigon playlist</div>
+</div>-->
+<a href="/rozcestnik-porady.html" class="odkazstred">všechny pořady</a>
+</div>
+<a name="galerie" class="aname"></a>
+<h1><span style="color: var(--epigonmodra);">Epigon</span> galerie</h1>
+<div class="galerie">
+<div class="imgallery"><a href="img/prvnistudio2.jpg" data-lightbox="image-1"><img class="thumbgallery" src="img/prvnistudio2-thumb.jpg"></a></div>
+<div class="imgallery"><a href="img/prvnistudio.jpg" data-lightbox="image-1"><img class="thumbgallery" src="img/prvnistudio-thumb.jpg"></a></div>
+<div class="imgallery"><a href="img/brambora.jpg" data-lightbox="image-1"><img class="thumbgallery" src="img/brambora-thumb.jpg"></a></div>
+<div class="imgallery"><a href="img/epigon2016.jpg" data-lightbox="image-1"><img class="thumbgallery" src="img/epigon2016-thumb.jpg"></a></div>
+<div class="imgallery"><a href="img/epigons.jpg" data-lightbox="image-1"><img class="thumbgallery" src="img/epigons-thumb.jpg"></a></div>
+<div class="imgallery"><a href="img/narttu.jpg" data-lightbox="image-1"><img class="thumbgallery" src="img/narttu-thumb.jpg"></a></div>
+<div class="imgallery"><a href="img/dts.jpg" data-lightbox="image-1"><img class="thumbgallery" src="img/dts-thumb.jpg"></a></div>
+<div class="imgallery"><a href="img/dod.jpg" data-lightbox="image-1"><img class="thumbgallery" src="img/dod-thumb.jpg"></a></div>
+</div>
+<a name="historie" class="aname"></a>
+<h1><span style="color: var(--epigonmodra);">stručná</span> historie</h1><br><p style="padding-bottom: 20px; color: var(--bila100);">*Rádio Epigon se rozhodně distancuje od podobných prohlášení jako např., že Zlatá bula sicilská (1212) je zákládajícím dekretem Rádia Epigon. Je pravda, že se tehdy o Rádiu Epigon jednalo, ale tehdy ještě nikdo ani netušil o co vlastně jde.</p>
+
+<div class="timeline"><div class="timelinepozadiprekryv"></div><div class="timelinepozadi"></div><div class="info"><h3 id="rok" style="text-decoration: underline; text-align: center;"></h3><span id="historie"><span style="text-align: center;width: 100%;display: block;">zvolte rok<span class="nomobile"> na časové ose</span></span></span></div>
+<div class="timeline1"><div class="timelinearea">
+<div class="timelinerok" onclick="letopocet('1893')"><div class="letopocet">1893</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('1896')"><div class="letopocet">1896</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('1922')"><div class="letopocet">1922</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('1923')"><div class="letopocet">1923</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('1953')"><div class="letopocet">1953</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('1969')"><div class="letopocet">1969</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('1984')"><div class="letopocet">1984</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('2011')"><div class="letopocet">2011</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('2014')"><div class="letopocet">2014</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('2015')"><div class="letopocet">2015</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('2017')"><div class="letopocet">2017</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('2021')"><div class="letopocet">2021</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('2025')"><div class="letopocet">2025</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('2033')"><div class="letopocet">2033</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('2034')"><div class="letopocet">2034</div><div class="timelinecarka"></div></div>
+<div class="timelinerok" onclick="letopocet('3134')"><div class="letopocet">3134</div><div class="timelinecarka"></div></div>
+</div></div></div>
+<script>
+    function letopocet(jinyrok){
+    const rok = document.getElementById('rok');
+	const elem = document.getElementById('historie');
+	const texty = {
+	    "1893" : "Nikola Tesla předvádí první veřejnou demonstraci rádia a radiového spojení pod názvem Rádio Epigon.",
+	    "1896" : "Guglielmo Marchese Marconi telegrafuje na vzdálenost přes tři kilometry za použití dodnes používaného čtvrtvlnného unipólu (využil uzemnění) rozhovor do Rádia Epigon.",
+	    "1922" : "V Anglii zahájeno pravidelné rozhlasové vysílání BBC po vzoru Rádia Epigon.",
+		"1923" : "Ve Kbelích dne 18. května začíná vysílat český rozhlas „Radiojournal“ – česká verze Rádia Epigon.",
+		"1953" : "První pokus streamovat Rádio Epigon, bohužel v té době nebyl internet, takže spojení bylo neúspěšné.",
+		"1969" : "(21. července 2:56 UTC) První člověk (Neil Armstrong) poslouchal Rádio Epigon mimo planetu Zemi.",
+		"1984" : "Roger Taylor (Queen) skládá skladbu Radio Epigon, kterou později přejmenuje na Radio Ga Ga.",
+		"2011" : "Naše vysílání na internetu odstartovalo v červnu 2011 z tehdejšího domova mládeže v Brantlově ulici a skrz mikrofon vás tehdy zdravili moderátoři Baky a Mára. Od samotného počátku nás bylo možné kontaktovat skrze naši facebookovou stránku.",
+		"2014" : "Spouštíme webové stránky, posluchači nás tak mohou kontaktovat i bez nutnosti registrace na Facebooku. Mimo to mají naši posluchači konečně možnost přečíst si důležité informace o nás přehledně na jednom místě a nemusejí tak dlouze scrollovat po Facebooku.",
+		"2015" : "Budovu domova mládeže v Brantlově ulici nadobro opouštíme kvůli rekonstrukci a stěhujeme se do domova mládeže v Nerudově ulici. Původní místnost kvůli provozním potřebám opouštíme zhruba po měsíci a přesouváme se do studia na opačné straně téhož patra.",
+		"2017" : "(2. prosince 23.55) Zachytily vysílání Rádia Epigon komunikační satelity na planetě Omega v galaxii Andromeda.",
+		"2021" : "Rádio Epigon slaví 10 let od uvedení na internetu. Přichází gratulovat Jára Cimrman, který minulý týden v úterý ve 3 hodiny, 15 minut a 36 vteřin sestrojil stroj času.",
+		"2025" : "Novoroční projev přednáší v Rádiu Epigon nový český prezident Jaromír Jágr.",
+		"2033" : "Z Rádia Epigon zdraví pozemšťany návštěvníci z planety Omega v galaxii Andromeda.",
+		"2034" : "Rádio Epigon – První vysílání na planetě Mars.",
+		"3134" : "Rádio Epigon překročilo hranici jednoho biliónu posluchačů v dané kosmosekundě."
+	};
+    rok.innerHTML = jinyrok;
+	elem.innerHTML = texty[jinyrok]||'Informace nejsou k dispozici.';
+	}
+</script>
+<a href="/rozcestnik-novinky.html">Novinky a tiskové zprávy</a>
+</div>
+<div class="socky">
+<div class="sockyobsah">
+<h1><span style="color: var(--bila);">Epigon</span> na sítích</h1>
+<div class="left"><a href="https://www.youtube.com/channel/UCyBs26DLAUSnoXzqDCkzhtA" target="_blank"><img class="padding10" src="youtube.svg" width="150px"></a><br>
+<p class="padding10 paddingvedle" style="padding: 0px 0px 10px 55px; color: var(--bila);">nejnovější video</p>
+<div class="video-container"><div class="prekryvyt" style="display: none;" id="play-video"><img src="/img/play.svg"></div><iframe id="video" width="640" height="340" src="https://www.youtube.com/embed/videoseries?list=UUyBs26DLAUSnoXzqDCkzhtA" rel="0" enablejsapi="1" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div><div class="right">
+<p class="padding10" style="color: var(--bila);">nepřehlédněte</p>
+<div class="video-container"><div class="prekryvyt" style="display: none;"><img src="/img/play.svg"></div><iframe width="1920" height="1080" src="https://www.youtube.com/embed/o2E3Odn6tlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="padding10" style="color: var(--bila); padding-top: 10px;">podívejte se na naše profily</p>
+<a href="https://www.facebook.com/WebRadioEpigon/" target="_blank"><img src="facebook.svg" width="150px"></a><br>
+<a href="https://www.instagram.com/radio_epigon/" target="_blank"><img src="instagram.svg" width="150px"></a><br>
+<a href="https://soundcloud.com/user-496062775" target="_blank"><img src="soundcloud.svg" width="150px"></a>
+</div>
+</div></div>
+<div class="paticka">© 2022 WebRádio Epigon | <a href="/kontakty.html">kontakty</a> | <a href="https://stredni-skola.eu" target="_blank">Nerudovka Vimperk</a></div>
+</div>
 </body>
