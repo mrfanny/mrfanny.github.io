@@ -79,28 +79,34 @@ h1::after {
   filter: saturate(0%) contrast(1.2) blur(1px);
   z-index: -23;
   position: absolute;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
 }
 .ilustracni-obrazek-page {
   position: absolute;
   z-index: 3;
-  top: 82;
-  height: 260px;
+  bottom: 0;
+  height: 80%;
   right: 10%;
   display: flex;
   width: 300px;
   padding-top: 40px;
+}
+.ilustracni-obrazek-page img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .uvodnifoto {
   height: 300px;
   max-height: 70vh;
   width: 100%;
   z-index: 3;
+  position: relative;
 }
 .prekryvpageuvodniphoto {
   width: 100%;
-  height: 300px;
+  height: 100%;
   max-height: 70vh;
   position: absolute;
 background: -moz-linear-gradient(top,  hsla(206,70%,70%,0) 0%, hsla(207,87%,38%,1) 100%); /* FF3.6-15 */
@@ -112,8 +118,9 @@ z-index: 3;
 .uvodninadpispage {
   position: absolute;
   z-index: 3;
-  top: 82px;
-  height: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
   width: calc(100% - 20%);
   justify-content: center;
   align-items: center;
