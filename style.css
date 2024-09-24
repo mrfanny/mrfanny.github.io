@@ -649,13 +649,14 @@ margin-bottom: 100px;
 .epigon-playlist7{
 	grid-area: 8 / 2 / 9 / 97;
 }
-.vecerni-epigon2{
-	grid-area: 3 / 78 / 4 / 82;
-	z-index:2;
-	background: var(--epigonmodra);
-	width: max-content;
-	padding: 20px;
-	color: var(--bila);
+.odpoledni-epigon {
+  grid-area: 3 / 58 / 4 / 64;
+  z-index: 2;
+  background: var(--epigonmodra);
+  min-width: max-content;
+  padding: 20px;
+  color: var(--bila);
+  width: 100%;
 }
 .porad a{
 	color: #fff;
