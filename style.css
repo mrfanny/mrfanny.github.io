@@ -650,7 +650,16 @@ margin-bottom: 100px;
 	grid-area: 8 / 2 / 9 / 97;
 }
 .odpoledni-epigon {
-  grid-area: 3 / 58 / 4 / 64;
+  grid-area: 3 / 58 / 4 / 68;
+  z-index: 2;
+  background: var(--epigonmodra);
+  min-width: max-content;
+  padding: 20px;
+  color: var(--bila);
+  width: 100%;
+}
+.odpoledni-epigon2 {
+  grid-area: 5 / 59 / 6 / 68;
   z-index: 2;
   background: var(--epigonmodra);
   min-width: max-content;
@@ -660,6 +669,15 @@ margin-bottom: 100px;
 }
 .vecerni-epigon {
   grid-area: 3 / 82 / 4 / 87;
+  z-index: 2;
+  background: var(--epigonmodra);
+  min-width: max-content;
+  padding: 20px;
+  color: var(--bila);
+  width: 100%;
+}
+.vecerni-epigon2 {
+  grid-area: 5 / 82 / 6 / 87;
   z-index: 2;
   background: var(--epigonmodra);
   min-width: max-content;
