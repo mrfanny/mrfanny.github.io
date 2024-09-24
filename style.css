@@ -658,6 +658,15 @@ margin-bottom: 100px;
   color: var(--bila);
   width: 100%;
 }
+.vecerni-epigon {
+  grid-area: 3 / 82 / 4 / 87;
+  z-index: 2;
+  background: var(--epigonmodra);
+  min-width: max-content;
+  padding: 20px;
+  color: var(--bila);
+  width: 100%;
+}
 .porad a{
 	color: #fff;
 }
