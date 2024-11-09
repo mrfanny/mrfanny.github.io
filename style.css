@@ -420,6 +420,9 @@ background-size: 100%;
   line-height: 44px;
   text-align: center;
 }
+.jukeboxobsah .genreinformation {
+  padding-bottom: 0px;
+}
 .form-element input {
   padding: 9px;
 }
